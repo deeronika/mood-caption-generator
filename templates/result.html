@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Caption</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Your Caption ✨</h1>
+            <p><strong>Mood:</strong> {{ mood }}</p>
+
+            <div class="result-box">
+                {{ caption }}
+            </div>
+
+            <a href="/" class="back-btn">Try another mood</a>
+        </div>
+    </div>
+</body>
+</html>
